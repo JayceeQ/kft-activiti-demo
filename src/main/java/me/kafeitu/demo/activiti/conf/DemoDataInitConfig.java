@@ -113,8 +113,8 @@ public class DemoDataInitConfig {
         createUser("leaderuser", "Jhon", "Li", "000000", "jhon.li@kafeitu.me",
                 "", Arrays.asList("deptLeader", "user"), null);
 
-        createUser("kafeitu", "Coffee", "Rabbit", "000000", "coffee.rabbit@kafeitu.me",
-                "", Arrays.asList("user", "admin"), null);
+        createUser("myuser", "Coffee", "Rabbit", "000000", "coffee.rabbit@kafeitu.me",
+                "", Arrays.asList("user"), null);
     }
 
     protected void createUser(String userId, String firstName, String lastName, String password,

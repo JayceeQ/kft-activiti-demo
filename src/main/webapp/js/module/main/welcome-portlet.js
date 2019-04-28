@@ -30,77 +30,7 @@ $(function() {
 						$('.trace').click(graphTrace);
 					}
 				}
-			}, {
-				title: '表单概念',
-				content: {
-					type: 'text',
-					text: function() {
-						return $('.forms').html();
-					}
-				}
-			}, {
-				title: '会签（多实例）说明',
-				content: {
-					type: 'text',
-					text: function() {
-						return $('#multiInstance').html();
-					}
-				}
-			}, {
-                title: '关于作者',
-                content: {
-                    type: 'text',
-                    text: function() {
-                        return $('.aboutme').html();
-                    }
-                }
-            }]
-		}, {
-			width: 350,
-			portlets: [{
-				title: '演示内容',
-				content: {
-					type: 'text',
-					text: function() {
-						return $('.demos').html();
-					}
-				}
-			}   ]
-		}, {
-			width: 450,
-			portlets: [{
-				title: '项目说明',
-				content: {
-					type: 'text',
-					text: function() {
-						return $('.project-info').html();
-					}
-				}
-			}, {
-				title: '架构说明',
-				content: {
-					type: 'text',
-					text: function() {
-						return $('.arch').html();
-					}
-				}
-			}, {
-				title: '资源链接',
-				content: {
-					type: 'text',
-					text: function() {
-						return $('.links').html();
-					}
-				}
-			}, {
-                title: 'Rest接口',
-                content: {
-                    type: 'text',
-                    text: function() {
-                        return $('.rest').html();
-                    }
-                }
-            }]
+			}]
 		}]
 	});
 });
