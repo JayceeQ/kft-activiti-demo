@@ -44,7 +44,7 @@
 				<th>名称</th>
 				<th>KEY</th>
 				<th>版本号</th>
-				<th>XML</th>
+			<%--	<th>XML</th>--%>
 				<th>图片</th>
 				<th>操作</th>
 			</tr>
@@ -57,7 +57,7 @@
 					<td class='process-name'>${process.name }</td>
 					<td>${process.key }</td>
 					<td>${process.version }</td>
-					<td><a target="_blank" href='${ctx }/workflow/resource/read?processDefinitionId=${process.id}&resourceType=xml'>${process.resourceName }</a></td>
+			<%--		<td><a target="_blank" href='${ctx }/workflow/resource/read?processDefinitionId=${process.id}&resourceType=xml'>${process.resourceName }</a></td>--%>
 					<td><a target="_blank" href='${ctx }/workflow/resource/read?processDefinitionId=${process.id}&resourceType=image'>${process.diagramResourceName }</a></td>
 					<td><a class="startup-process">启动</a></td>
 				</tr>

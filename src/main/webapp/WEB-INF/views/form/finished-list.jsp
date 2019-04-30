@@ -17,7 +17,7 @@
 	<table>
 		<tr>
 			<th>流程ID</th>
-			<th>流程定义ID</th>
+			<th>名称</th>
 			<th>流程启动时间</th>
 			<th>流程结束时间</th>
 			<th>流程结束原因</th>
@@ -26,7 +26,7 @@
 		<c:forEach items="${page.result }" var="hpi">
 		<tr>
 			<td>${hpi.id }</td>
-			<td>${hpi.processDefinitionId }</td>
+			<td>${hpi.processDefinitionName }</td>
 			<td>${hpi.startTime }</td>
 			<td>${hpi.endTime }</td>
 			<td>${empty hpi.deleteReason ? "正常结束" : hpi.deleteReason}</td>

@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<%@ include file="/common/global.jsp"%>
-	<title>KAD登录页 - Jim</title>
+	<title>BMW流程演示 - Jim</title>
 	<script>
 		var logon = ${not empty user};
 		if (logon) {

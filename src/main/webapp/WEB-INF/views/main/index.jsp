@@ -46,7 +46,7 @@ PropertyFileUtil.init();
        				<img src="${ctx }/images/logo.png" height="48" align="top"  style="margin-top:5px" />
        			</td>
        			<td>
-       				<span style="font-size: 17px;color:#FFFF33">Activiti<br/>演示系统</span><br/>
+       				<span style="font-size: 17px;color:#FFFF33">BMW 流程<br/>演示系统</span><br/>
        			</td>
        			<td>
        				<div style="float:right; color: #fff;font-size: 12px;margin-top: 2px">

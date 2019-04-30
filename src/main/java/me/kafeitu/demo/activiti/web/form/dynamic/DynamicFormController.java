@@ -118,6 +118,7 @@ public class DynamicFormController {
     @SuppressWarnings("unchecked")
     public Map<String, Object> findStartForm(@PathVariable("processDefinitionId") String processDefinitionId) throws Exception {
         Map<String, Object> result = new HashMap<String, Object>();
+        System.out.println("processDefinitionId=" + processDefinitionId);
         StartFormDataImpl startFormData = (StartFormDataImpl) formService.getStartFormData(processDefinitionId);
         startFormData.setProcessDefinition(null);
 

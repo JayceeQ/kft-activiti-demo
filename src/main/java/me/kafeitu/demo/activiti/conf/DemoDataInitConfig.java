@@ -1,19 +1,9 @@
 package me.kafeitu.demo.activiti.conf;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Arrays;
-import java.util.List;
-import javax.annotation.PostConstruct;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import me.kafeitu.demo.activiti.util.PropertyFileUtil;
-import org.activiti.engine.IdentityService;
-import org.activiti.engine.ManagementService;
-import org.activiti.engine.RepositoryService;
-import org.activiti.engine.RuntimeService;
-import org.activiti.engine.TaskService;
+import org.activiti.engine.*;
 import org.activiti.engine.identity.Group;
 import org.activiti.engine.identity.Picture;
 import org.activiti.engine.identity.User;
@@ -26,6 +16,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 自动初始化演示数据
@@ -64,7 +60,7 @@ public class DemoDataInitConfig {
             e.printStackTrace();
         }
 
-        if (Boolean.valueOf(PropertyFileUtil.get("create.demo.users", "true"))) {
+/*        if (Boolean.valueOf(PropertyFileUtil.get("create.demo.users", "true"))) {
             LOGGER.info("Initializing demo groups");
             initDemoGroups();
             LOGGER.info("Initializing demo users");
@@ -79,7 +75,7 @@ public class DemoDataInitConfig {
         if (Boolean.valueOf(PropertyFileUtil.get("create.demo.models", "true"))) {
             LOGGER.info("Initializing demo models");
             initModelData();
-        }
+        }*/
     }
 
     protected void initDemoGroups() {

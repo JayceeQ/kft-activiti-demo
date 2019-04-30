@@ -571,9 +571,9 @@
 
                 <!-- driver configs -->
                 <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
-                <jdbc.url><![CDATA[jdbc:mysql://localhost:3306/kad?useUnicode=true&amp;characterEncoding=utf-8]]></jdbc.url>
+                <jdbc.url><![CDATA[jdbc:mysql://localhost:3307/kad?useUnicode=true&amp;characterEncoding=utf-8]]></jdbc.url>
                 <jdbc.username>root</jdbc.username>
-                <jdbc.password>root</jdbc.password>
+                <jdbc.password>123456</jdbc.password>
                 <hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>
             </properties>
             <build>

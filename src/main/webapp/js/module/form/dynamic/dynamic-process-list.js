@@ -47,7 +47,7 @@ function readFormFields(processDefinitionId) {
 
 	// 设置表单提交id
 	$form.attr('action', ctx + '/form/dynamic/start-process/' + processDefinitionId);
-
+    debugger;
     // 添加隐藏域
     if ($('#processType').length == 0) {
         $('<input/>', {
